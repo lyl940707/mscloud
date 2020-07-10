@@ -2,6 +2,7 @@ package com.single;
 
 //枚举类单例模式
 public class  LazyEnum {
+    public int a=5;
     private LazyEnum(){};
     private static enum SingleLazyEnum{
         //创建一个枚举对象，该对象天生为单例
