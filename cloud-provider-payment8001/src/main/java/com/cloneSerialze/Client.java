@@ -2,7 +2,7 @@ package com.cloneSerialze;
 
 import org.springframework.beans.BeanUtils;
 import org.springframework.util.SerializationUtils;
-
+//使用序列化来实现深拷贝
 public class Client {
     public static void main(String[] args) {
         Subject subject=new Subject();

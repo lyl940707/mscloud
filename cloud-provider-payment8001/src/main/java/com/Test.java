@@ -2,10 +2,13 @@ package com;
 
 public class Test {
     public static void main(String[] args) {
-        String a="a";
-        String b=new String("a");
-        System.out.println(a==b);
-        b=b.intern();
-        System.out.println(a==b);
+        String str1 = new StringBuilder("计算机").append("软件").toString();
+        String str3="计算机软件";
+//        System.out.println(str1==str3);
+//        String str1=new String("计算机软件");
+        System.out.println(str1.intern() == str1);
+        String str2 = new StringBuilder("ja").append("va").toString();
+        System.out.println(str2.intern() == str2);
+
     }
 }
