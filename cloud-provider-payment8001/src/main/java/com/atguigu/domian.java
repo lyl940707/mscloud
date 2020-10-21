@@ -1,9 +1,6 @@
 package com.atguigu;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import java.util.Objects;
+import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -18,9 +15,19 @@ public class domian {
         personList.add(new Person("小梅", 20, "中国", 'F', 49));
         personList.add(new Person("何雪", 21, "中国", 'F', 37));
         personList.add(new Person("何雪1", 23, "中国", 'F', 39));
-        Stream<Person> s = personList.stream();
-        Map<String, Integer> collect = s.collect(Collectors.toMap(e -> e.getName(), e -> e.getAge()));
-        System.out.println(collect);
+//        Stream<Person> s = personList.stream();
+//        Map<String, Integer> collect = s.collect(Collectors.toMap(e -> e.getName(), e -> e.getAge()));
+//        System.out.println(collect);
+//        personList.stream().forEach(e->{
+//            System.out.println(e.getName());
+//        });
+//        System.out.println(personList.stream().max((e1,e2)->e2.getScore()-e1.getScore()));
+//        System.out.println(personList.stream().min(Comparator.comparing(Person::getAge)));
+//        personList.stream().sorted(Comparator.comparing(person -> person.getScore())).forEach(e->{
+//            System.out.println(e.toString());
+//        });
+        System.out.println(personList.stream().map(e->e.getAge()).collect(Collectors.toList()));
+        System.out.println(1);
     }
 
 
