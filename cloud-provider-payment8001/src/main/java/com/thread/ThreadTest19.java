@@ -5,10 +5,14 @@ import com.sun.xml.internal.ws.api.ha.StickyFeature;
 import java.lang.reflect.Field;
 import java.util.*;
 import java.util.concurrent.CopyOnWriteArrayList;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ThreadPoolExecutor;
 
 public class ThreadTest19 {
     static int j=0;
     public static void main(String[] args) throws Exception{
+        ExecutorService cachedThreadPool = Executors.newCachedThreadPool();
         System.out.println(1>>1);
         System.out.println(4>>1);
         ThreadTest19 threadTest19=new ThreadTest19();

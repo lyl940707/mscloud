@@ -2,7 +2,6 @@ package com.testJdkProxy;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
-import java.lang.reflect.Proxy;
 
 public class MyProxy implements InvocationHandler {
     private Subject subject;
